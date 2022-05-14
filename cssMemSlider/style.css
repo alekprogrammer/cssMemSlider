@@ -1,0 +1,15 @@
+.page-content {
+    display: flex;
+    width: 75vw;
+    height: 75vh;
+    margin: 0 auto;
+}
+
+.slider {
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 70vw;
+    height: 50vh;
+    -moz-box-shadow: 0 0 10px #00ffdd;
+    box-shadow: 0 0 10px #00ffdd;
+}
