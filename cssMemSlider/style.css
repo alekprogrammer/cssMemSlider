@@ -1,15 +1,39 @@
+body {
+    background-color: #0d1117;
+}
+
 .page-content {
     display: flex;
+    flex-wrap: wrap;
     width: 75vw;
-    height: 75vh;
+    height: 67vh;
     margin: 0 auto;
 }
 
 .slider {
-    margin: 0 auto;
     margin-top: 5%;
-    width: 70vw;
+    width: 75vw;
     height: 50vh;
     -moz-box-shadow: 0 0 10px #00ffdd;
-    box-shadow: 0 0 10px #00ffdd;
+    box-shadow: 0 0 10vw #00ffdd;
+}
+
+.controls {
+    display: flex;
+}
+
+.control-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 8vw;
+}
+
+.control {
+    border: 2px solid #00ffdd;
+    border-radius: 50px;
+    width: calc(16vw / 6);
+    height: 4vh;
+    transition: 0.5s;
 }
