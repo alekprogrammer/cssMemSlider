@@ -37,3 +37,7 @@ body {
     height: 4vh;
     transition: 0.5s;
 }
+
+.control-container:hover>.control {
+    background-color: #00ffdd;
+}
