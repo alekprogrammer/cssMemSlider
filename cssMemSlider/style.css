@@ -5,6 +5,7 @@ body {
 .page-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 36vw;
     height: 67vh;
     margin: 0 auto;
@@ -29,15 +30,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 8vw;
+    width: 4vw;
     height: 8vw;
 }
 
 .control-noactive {
     border: 2px solid #00ffdd;
     border-radius: 50px;
-    width: calc(16vw / 6);
-    height: 4vh;
+    width: 1vw;
+    height: 1vw;
     transition: 0.5s;
 }
 
@@ -49,13 +50,19 @@ body {
     border: 2px solid #ffffff;
     border-radius: 50px;
     background-color: #ffffff;
-    width: calc(16vw / 6);
-    height: 4vh;
+    width: 1vw;
+    height: 1vw;
     transition: 0.5s;
 }
 
-
-/* font-family: 'Akshar', sans-serif; */
+.subscription {
+    font-family: 'Akshar', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 18vw;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
 
 img {
     width: 36vw;
