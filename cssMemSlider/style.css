@@ -107,16 +107,6 @@ input[type=radio] {
     background-color: #00ffdd;
 }
 
-
-/* .control:checked {
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    background-color: #ffffff;
-    width: 1vw;
-    height: 1vw;
-    transition: 0.5s;
-} */
-
 #subscriptions {
     display: flex;
     gap: 18vw;
@@ -161,17 +151,12 @@ img {
         transform: translate(-36vw, 2vw);
     }
     #slide2:checked~#controls-subscriptions #subscriptions {
-        transform: translate(-36vw, 2vw);
+        transform: translate(-72vw, 2vw);
     }
     #slide3:checked~#controls-subscriptions #subscriptions {
-        transform: translate(-36vw, 2vw);
+        transform: translate(-108vw, 2vw);
     }
     #slide4:checked~#controls-subscriptions #subscriptions {
-        transform: translate(-36vw, 2vw);
+        transform: translate(-144vw, 2vw);
     }
 }
-
-
-/* img:nth-of-type(1) {
-    margin: -10px;
-} */
