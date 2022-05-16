@@ -107,6 +107,10 @@ input[type=radio] {
     background-color: #00ffdd;
 }
 
+.control-container:active>label {
+    background-color: #001535;
+}
+
 #subscriptions {
     display: flex;
     gap: 18vw;
@@ -120,15 +124,6 @@ input[type=radio] {
     width: 18vw;
     color: #ffffff;
     font-size: 1.5vw;
-}
-
-@keyframes moveLeft {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-36vw);
-    }
 }
 
 .translate-left {
