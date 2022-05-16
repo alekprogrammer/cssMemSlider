@@ -7,23 +7,84 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 36vw;
-    height: 67vh;
+    height: 40vw;
     margin: 0 auto;
 }
 
-.slider {
-    overflow: hidden;
+label {
+    cursor: pointer;
+}
+
+#slide1:checked~#controls-subscriptions .control-container:nth-child(1) label,
+#slide2:checked~#controls-subscriptions .control-container:nth-child(2) label,
+#slide3:checked~#controls-subscriptions .control-container:nth-child(3) label,
+#slide4:checked~#controls-subscriptions .control-container:nth-child(4) label {
+    background-color: #ffffff;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+#slider {
     display: flex;
     align-items: center;
-    margin-top: 5%;
-    width: 36vw;
-    height: 36vw;
+    overflow: hidden;
     -moz-box-shadow: 0 0 10px #00ffdd;
     box-shadow: 0 0 10vw #00ffdd;
+    width: 36vw;
+    height: 36vw;
+}
+
+#slider-carousel {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#slide1:checked~#slider #slider-carousel {
+    transform: translateX(0);
+}
+
+#slide2:checked~#slider #slider-carousel {
+    transform: translateX(-36vw);
+}
+
+#slide3:checked~#slider #slider-carousel {
+    transform: translateX(-72vw);
+}
+
+#slide4:checked~#slider #slider-carousel {
+    transform: translateX(-108vw);
+}
+
+#slide1:checked~#controls-subscriptions #subscriptions {
+    transform: translateX(-36vw);
+}
+
+#slide2:checked~#controls-subscriptions #subscriptions {
+    transform: translateX(-72vw);
+}
+
+#slide3:checked~#controls-subscriptions #subscriptions {
+    transform: translateX(-108vw);
+}
+
+#slide4:checked~#controls-subscriptions #subscriptions {
+    transform: translateX(-144vw);
+}
+
+#controls-subscriptions {
+    display: flex;
+    width: 36vw;
+    overflow: hidden;
 }
 
 .controls {
     display: flex;
+    margin-left: 20vw;
+    align-items: center;
+    z-index: 1;
 }
 
 .control-container {
@@ -34,7 +95,7 @@ body {
     height: 8vw;
 }
 
-.control-noactive {
+.control-container>label {
     border: 2px solid #00ffdd;
     border-radius: 50px;
     width: 1vw;
@@ -42,16 +103,23 @@ body {
     transition: 0.5s;
 }
 
-.control-container:hover>.control-noactive {
+.control-container:hover>label {
     background-color: #00ffdd;
 }
 
-.control-active {
+
+/* .control:checked {
     border: 2px solid #ffffff;
     border-radius: 50px;
     background-color: #ffffff;
     width: 1vw;
     height: 1vw;
+    transition: 0.5s;
+} */
+
+#subscriptions {
+    display: flex;
+    gap: 18vw;
     transition: 0.5s;
 }
 
@@ -64,6 +132,25 @@ body {
     font-size: 1.5vw;
 }
 
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-36vw);
+    }
+}
+
+.translate-left {
+    animation-name: moveLeft;
+    animation-duration: 0.5s;
+}
+
 img {
     width: 36vw;
 }
+
+
+/* img:nth-of-type(1) {
+    margin: -10px;
+} */

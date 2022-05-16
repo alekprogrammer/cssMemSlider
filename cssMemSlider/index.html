@@ -14,24 +14,41 @@
 
 <body>
     <div class="page-content">
-        <div class="slider"><img src="2.jpg"></div>
-        <div class="subscription"><span>Right never gets any attention...</span></div>
-        <div class="controls">
-            <div class="control-container">
-                <div class="control-active"></div>
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slider">
+            <div id="slider-carousel">
+                <img src="0.jpg">
+                <img src="1.jpg">
+                <img src="2.jpg">
+                <img src="3.jpg">
             </div>
-            <div class="control-container">
-                <div class="control-noactive"></div>
+        </div>
+        <div id="controls-subscriptions">
+            <div class="controls">
+                <label class="control-container" for="slide1">
+                    <label for="slide1"></label>
+                </label>
+                <label class="control-container" for="slide2">
+                    <label for="slide2"></label>
+                </label>
+                <label class="control-container" for="slide3">
+                    <label for="slide3"></label>
+                </label>
+                <label class="control-container" for="slide4">
+                    <label for="slide4"></label>
+                </label>
             </div>
-            <div class="control-container">
-                <div class="control-noactive"></div>
-            </div>
-            <div class="control-container">
-                <div class="control-noactive"></div>
+            <div id="subscriptions">
+                <span class="subscription">I'll hold down the front</span>
+                <span class="subscription">Right never gets any attention...</span>
+                <span class="subscription">Meowed until human woke up<br>Didn't need anything just bored</span>
+                <span class="subscription">Me after doing absolutely nothing all day</span>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
