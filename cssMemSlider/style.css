@@ -150,6 +150,27 @@ img {
     width: 36vw;
 }
 
+@media (max-width: 767px) {
+    .controls {
+        transform: translate(-10vw, -1vw);
+    }
+    #subscriptions {
+        transform: translateY(1vw);
+    }
+    #slide1:checked~#controls-subscriptions #subscriptions {
+        transform: translate(-36vw, 2vw);
+    }
+    #slide2:checked~#controls-subscriptions #subscriptions {
+        transform: translate(-36vw, 2vw);
+    }
+    #slide3:checked~#controls-subscriptions #subscriptions {
+        transform: translate(-36vw, 2vw);
+    }
+    #slide4:checked~#controls-subscriptions #subscriptions {
+        transform: translate(-36vw, 2vw);
+    }
+}
+
 
 /* img:nth-of-type(1) {
     margin: -10px;
